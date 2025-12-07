@@ -43,6 +43,10 @@ Debug-DataFlow.ps1
 diagnose.ps1
 start-dev.ps1
 TROUBLESHOOT.md
+ASSIGNMENT_COMPLIANCE.md
+GITHUB_PUSH_CHECKLIST.md
+PRE_PUSH_CHECKLIST.md
+cleanup.ps1
 
 # Temporary
 *.tmp
