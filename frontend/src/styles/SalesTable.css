@@ -1,0 +1,142 @@
+.sales-table-container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.sales-table thead {
+  background: var(--background);
+  border-bottom: 2px solid var(--border);
+}
+
+.sales-table th {
+  padding: 0.875rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.sales-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.2s;
+}
+
+.sales-table tbody tr:hover {
+  background: var(--background);
+}
+
+.sales-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.sales-table td {
+  padding: 1rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.customer-info,
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 150px;
+}
+
+.customer-name,
+.product-name {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.customer-meta,
+.product-brand {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.amount {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.category-badge,
+.payment-badge,
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.category-badge {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.payment-badge {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status-badge {
+  font-weight: 600;
+}
+
+.status-badge.status-completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.status-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.status-cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Responsive Table */
+@media (max-width: 1200px) {
+  .sales-table {
+    font-size: 0.8125rem;
+  }
+
+  .sales-table th,
+  .sales-table td {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sales-table-container {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .sales-table th,
+  .sales-table td {
+    padding: 0.5rem;
+  }
+}
